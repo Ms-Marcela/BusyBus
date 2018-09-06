@@ -6,24 +6,25 @@ body {
   background-color: #000;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  font-color: #000;
+  color: #000;
 }
 
 .MainContainer {
-  position: absolute;
   top: 40px;
   left: 500px;
-  width: 390px;
+  width: 375px;
   height: 734px;
   color: #fff;
   overflow-y: scroll;
   overflow-x: hidden;
   }
 
+  ul {
+    list-style-type: none;
+    float: left;
+  }
+
 .container1 {
-  position: absolute;
-  width: 375px;
-  height: 734px;
   background-color: #FFCD02;
 }
 
@@ -40,61 +41,45 @@ body {
   background-color: #FFCD02;
 }
 
-.settings { /*settings image*/
+.settings { /*settings image* map?*/
   padding-top: 24px;
   padding-left: 29px;
 }
 
-.Search h1{
-  position: absolute;
-  font-size: 17px;
-  color: #8A8A8F;
-  line-height: 60px;
-  letter-spacing: -2.4%;
-  left: 40px;
-  top: -13px ;
-}
-
-.magnifying{ /*image*/
-  padding-top: 11px;
-  padding-left: 20px;
-}
-
-.Search{ /*search container*/
+input{
   position: absolute;
   width: 289px;
   height: 33px;
   background-color: #fff;
-  top: 41px;
+  top: 22px;
   left: 71px;
   border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-image: url(../images/SearchSearch.png);
+  background-repeat: no-repeat;
+  background-position: bottom 50% left 5%;
+  padding-left: 38px;
 }
 
-.container3 {
+.container3 { /*map image*/
   position: absolute;
-  top: 92px;
   width: 375px;
   height: 254px;
-  background-color: #fff;
-}
-
-.map { /*map image*/
   top: 92px;
-  width: 375px;
-  height: 254px;
 }
 
 /*Bus Lines code*/
-.container4 {
+.container4, .container5, .container6, .container7, .container8{
   position: absolute;
   top: 346px;
   width: 375px;
   height: 89px;
   background-color: #2E5A89;
-  border-bottom: 2px solid #124379;
+  border-bottom: 14px solid #124379;
 }
 
-#e1 {
+.lineNumber {
   font-weight: bold;
   color: #fff;
   font-size: 38px;
@@ -102,13 +87,13 @@ body {
   padding-left: 10px;
 }
 
-#e2  {
+.street  {
   color: #fff;
   line-height: 12px;
   padding-left: 10px;
 }
 
-#e3{
+.busTime {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
@@ -118,7 +103,7 @@ body {
   top: 10px;
 }
 
-#e3-1 {
+.min {
   color: #fff;
   position: absolute;
   left: 335px;
@@ -126,7 +111,7 @@ body {
   top: 23px;
 }
 
-#e4 {
+.nextBus {
   color: #fff;
   font-size: 14px;
   position: absolute;
@@ -136,39 +121,19 @@ body {
 }
 
 .container5 {
-  position: absolute;
   top: 435px;
-  width: 375px;
-  height: 89px;
-  background-color: #2E5A89;
-  border-bottom: 2px solid #124379;
 }
 
 .container6 {
-  position: absolute;
   top: 524px;
-  width: 375px;
-  height: 89px;
-  background-color: #2E5A89;
-  border-bottom: 2px solid #124379;
 }
 
 .container7 {
-  position: absolute;
   top: 613px;
-  width: 375px;
-  height: 89px;
-  background-color: #2E5A89;
-  border-bottom: 2px solid #124379;
 }
 
 .container8 {
-  position: absolute;
   top: 702px;
-  width: 375px;
-  height: 89px;
-  background-color: #2E5A89;
-  border-bottom: 2px solid #124379;
 }
 
 .container9 {
@@ -177,10 +142,10 @@ body {
   width: 375px;
   height: 89px;
   background-color:   #ff9933;
-  border-bottom: 2px solid  #ff8000;
+  border-bottom: 14px solid  #ff8000;
 }
 
-.container9 #e3{
+.reroute{
   color: #fff;
   font-size: 16px;
   position: absolute;
@@ -190,7 +155,7 @@ body {
   top: 26px;
 }
 
-.container9 #e4{
+.notAval{
   color: #fff;
   position: absolute;
   font-weight: regular;
@@ -199,16 +164,16 @@ body {
   top: 50px;
 }
 
-.container10 {
+.container10, .container11, .container12{
   position: absolute;
   top: 880px;
   width: 375px;
   height: 89px;
   background-color: #ff5c33;
-  border-bottom: 2px solid  #ff471a;
+  border-bottom: 14px solid  #ff471a;
 }
 
-.container10 #e3, .container11 #e3, .container12 #e3{
+.noService{
   color: #fff;
   font-size: 16px;
   position: absolute;
@@ -218,7 +183,7 @@ body {
   top: 22px;
 }
 
-.container10 #e4, .container11 #e4{
+.resumeTime {
   color: #fff;
   font-size: 16px;
   position: absolute;
@@ -228,29 +193,29 @@ body {
 }
 
 .container11 {
-  position: absolute;
   top: 969px;
   width: 375px;
-  height: 89px;
-  background-color: #ff5c33;
-  border-bottom: 2px solid  #ff471a
-;
 }
 
 .container12 {
-  position: absolute;
   top: 1058px;
-  width: 375px;
-  height: 89px;
-  background-color: #ff5c33;
-  border-bottom: 2px solid  #ff471a;
 }
 
-.container12 #e4{
+.resumes2{
   color: ##cc4400;
   font-size: 16px;
   position: absolute;
   left: 232px;
   text-align: right;
   top: 50px;
+}
+/*
+ul {
+  list-style-type: none;
+  float: right;
+}
+
+li {
+  float: right;
+  padding: 30px;
 }

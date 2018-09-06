@@ -5,6 +5,7 @@
     <title>Fronted Challenge</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <section class="MainContainer">
@@ -12,89 +13,86 @@
         <img src="images/BaseSearchBar.png" class="navigation" alt="battery">
       <div class= "container2">
         <img src="images/noun_Settings_1837931.png" class="settings" alt="round-set">
+        <input type="text" id="search" name="searchBox" placeholder="Search"/>
       </div>
-      <div class="Search">
-        <img src="images/SearchSearch.png" class="magnifying" ><!--magnifying glass image here-->
-          <h1> Search </h1>
-      </div>
-      <div class= "container3">
-        <img src="images/Map.png" class="map" alt="mapa" ><!--map image here-->
+      <div class="container3">
+        <img src="images/Map.png" class="map" alt="streetMap" ><!--map image here-->
       </div>
       <div class= "container4" >
-          <ul style="list-style-type:none">
-            <li id="e1"> 60 E </li>
-            <li id="e2"> Randolph/Harbour Dr </li>
-            <li id="e3"> 1 </li>
-            <li id= "e3-1"> min </li>
-            <li id="e4"> 21 min </li>
-          </ul>
-       </div>
-       <div class= "container5">
-          <ul style="list-style-type:none">
-            <li id="e1">124 E</li>
-            <li id="e2">Navy Pier</li>
-            <li id="e3"> 5 </li>
-            <li id= "e3-1"> min </li>
-            <li id="e4"> 15 min </li>
+        <ul>
+          <li class="lineNumber"> 60 E </li>
+          <li class="street"> Randolph/Harbour Dr </li>
+          <li class="busTime"> 1 </li>
+          <li class= "min"> min </li>
+          <li class="nextBus"> 21 min </li>
+        </ul>
+      </div>
+      <div class= "container5">
+        <ul>
+          <li class="lineNumber">124 E</li>
+          <li class="street">Navy Pier</li>
+          <li class="busTime"> 5 </li>
+          <li class= "min"> min </li>
+          <li class="nextBus"> 15 min </li>
         </ul>
       </div>
       <div class= "container6" >
-          <ul style="list-style-type:none">
-            <li id="e1">151 N</li>
-            <li id="e2">Devon/Clark</li>
-            <li id="e3"> 8 </li>
-            <li id= "e3-1"> min </li>
-            <li id="e4"> 24 min </li>
+        <ul>
+          <li class="lineNumber">151 N</li>
+          <li class="street">Devon/Clark</li>
+          <li class="busTime"> 8 </li>
+          <li class= "min"> min </li>
+          <li class="nextBus"> 24 min </li>
         </ul>
       </div>
       <div class= "container7" >
-          <ul style="list-style-type:none">
-            <li id="e1">J14 S</li>
-            <li id="e2">103rd/Stony Island</li>
-            <li id="e3"> 5 </li>
-            <li id= "e3-1"> min </li>
-            <li id="e4"> 15 min </li>
+        <ul>
+          <li class="lineNumber">J14 S</li>
+          <li class="street">103rd/Stony Island</li>
+          <li class="busTime"> 5 </li>
+          <li class= "min"> min </li>
+          <li class="nextBus"> 15 min </li>
         </ul>
       </div>
       <div class= "container8" >
-          <ul style="list-style-type:none">
-            <li id="e1">124 S</li>
-            <li id="e2">Navy Pier</li>
-            <li id="e3"> 7 </li>
-            <li id= "e3-1"> min </li>
-            <li id="e4"> 17 min </li>
+        <ul>
+          <li class="lineNumber">124 S</li>
+          <li class="street">Navy Pier</li>
+          <li class="busTime"> 7 </li>
+          <li class= "min"> min </li>
+          <li class="nextBus"> 17 min </li>
         </ul>
       </div>
       <div class= "container9" >
-          <ul style="list-style-type:none">
-            <li id="e1">6x</li>
-            <li id="e2">Jackson Park Express</li>
-            <li id="e3"> Reroute </li>
-            <li id="e4"> N/A </li>
+        <ul>
+          <li class="lineNumber">6x</li>
+          <li class="street">Jackson Park Express</li>
+          <li class="reroute"> Reroute </li>
+          <li class="notAval"> N/A </li>
         </ul>
       </div>
       <div class= "container10" >
-          <ul style="list-style-type:none">
-            <li id="e1">4</li>
-            <li id="e2">Cottage Grove</li>
-            <li id="e3"> Out of Service </li>
-            <li id="e4"> Resumes 12:10 am </li>
+        <ul>
+          <li class="lineNumber">4</li>
+          <li class="street">Cottage Grove</li>
+          <li class="noService"> Out of Service </li>
+          <li class="resumeTime"> Resumes 12:10 am </li>
         </ul>
       </div>
       <div class= "container11">
-          <ul style="list-style-type:none">
-            <li id="e1">20</li>
-            <li id="e2">Madison</li>
-            <li id="e3"> Out of Service </li>
-            <li id="e4"> Resumes 12:10 am </li>
+        <ul>
+          <li class="lineNumber">20</li>
+          <li class="street">Madison</li>
+          <li class="noService"> Out of Service </li>
+          <li class="resumeTime"> Resumes 12:10 am </li>
         </ul>
       </div>
       <div class= "container12">
-          <ul style="list-style-type:none">
-            <li id="e1">157</li>
-            <li id="e2">Streeterville/Taylor</li>
-            <li id="e3"> Out of Service </li>
-            <li id="e4"> Resumes 6:00 am </li>
+        <ul>
+          <li class="lineNumber">157</li>
+          <li class="street">Streeterville/Taylor</li>
+          <li class="noService"> Out of Service </li>
+          <li class="resumeTime"> Resumes 6:00 am </li>
         </ul>
       </div>
     </section>
