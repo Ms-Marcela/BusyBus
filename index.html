@@ -8,91 +8,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <section class="MainContainer">
-      <div class= "container1"> <!--navigation bar image here-->
+    <section class="container">
+      <div class= "status-bar"> <!--status bar image here-->
         <img src="images/BaseSearchBar.png" class="navigation" alt="battery">
-      <div class= "container2">
-        <img src="images/noun_Settings_1837931.png" class="settings" alt="round-set">
-        <input type="text" id="search" name="searchBox" placeholder="Search"/>
       </div>
-      <div class="container3">
+      <nav>
+        <input type="text" id="search" name="searchBox" placeholder="Search" />
+      </nav>
+      <div class="map">
         <img src="images/Map.png" class="map" alt="streetMap" ><!--map image here-->
       </div>
-      <div class= "container4" >
+      <div class="row" >
         <ul>
-          <li class="lineNumber"> 60 E </li>
-          <li class="street"> Randolph/Harbour Dr </li>
-          <li class="busTime"> 1 </li>
-          <li class= "min"> min </li>
-          <li class="nextBus"> 21 min </li>
+          <li class="bus">
+            <span class="lineNumber">60 E</span><br/>
+            <span class="street">Randolph/Harbour Dr</span>
+          </li>
+          <li class="arrival">
+            <span class="busTime">1</span>
+            <span class="min">min</span><br/>
+            <span class="nextBus">21 min</span>
+          </li>
         </ul>
       </div>
-      <div class= "container5">
+      <div class="row">
         <ul>
-          <li class="lineNumber">124 E</li>
-          <li class="street">Navy Pier</li>
-          <li class="busTime"> 5 </li>
-          <li class= "min"> min </li>
-          <li class="nextBus"> 15 min </li>
+          <li class="bus">
+            <span class="lineNumber">124 E</span><br/>
+            <span class="street">Navy Pier</span>
+          </li>
+          <li class="arrival">
+            <span class="busTime">5</span>
+            <span class="min">min</span><br/>
+            <span class="nextBus">15 min</span>
+          </li>
         </ul>
       </div>
-      <div class= "container6" >
+      <div class="row" >
         <ul>
-          <li class="lineNumber">151 N</li>
-          <li class="street">Devon/Clark</li>
-          <li class="busTime"> 8 </li>
-          <li class= "min"> min </li>
-          <li class="nextBus"> 24 min </li>
+          <li class="bus">
+            <span class="lineNumber">151 N</span><br/>
+            <span class="street">Devon/Clark</span>
+          </li>
+          <li class="arrival">
+            <span class="busTime">8</span>
+            <span class="min">min</span><br/>
+            <span class="nextBus">24 min</span>
+          </li>
         </ul>
       </div>
-      <div class= "container7" >
+      <div class="row" >
         <ul>
-          <li class="lineNumber">J14 S</li>
-          <li class="street">103rd/Stony Island</li>
-          <li class="busTime"> 5 </li>
-          <li class= "min"> min </li>
-          <li class="nextBus"> 15 min </li>
+          <li class="bus">
+            <span class="lineNumber">J14 S</span><br/>
+            <span class="street">103rd/Stony Island</span>
+          </li>
+          <li class="arrival">
+            <span class="busTime">5</span>
+            <span class="min">min</span><br/>
+            <span class="nextBus">15 min</span>
+          </li>
         </ul>
       </div>
-      <div class= "container8" >
+      <div class="row" >
         <ul>
-          <li class="lineNumber">124 S</li>
-          <li class="street">Navy Pier</li>
-          <li class="busTime"> 7 </li>
-          <li class= "min"> min </li>
-          <li class="nextBus"> 17 min </li>
+          <li class="bus">
+            <span class="lineNumber">124 S</span><br/>
+            <span class="street">Navy Pier</span>
+          </li>
+          <li class="arrival">
+            <span class="busTime">7</span>
+            <span class="min">min</span><br/>
+            <span class="nextBus">17 min</span>
+          </li>
         </ul>
       </div>
-      <div class= "container9" >
+      <div class="row yellow" >
         <ul>
-          <li class="lineNumber">6x</li>
-          <li class="street">Jackson Park Express</li>
-          <li class="reroute"> Reroute </li>
-          <li class="notAval"> N/A </li>
+          <li class="bus">
+            <span class="lineNumber">6x</span><br/>
+            <span class="street">Jackson Park Express</span>
+          </li>
+          <li class="arrival">
+            <span class="reRoute">Reroute</span><br/>
+            <span class="notAval">N/A</span>
+          </li>
         </ul>
       </div>
-      <div class= "container10" >
+      <div class="row orange" >
         <ul>
-          <li class="lineNumber">4</li>
-          <li class="street">Cottage Grove</li>
-          <li class="noService"> Out of Service </li>
-          <li class="resumeTime"> Resumes 12:10 am </li>
+          <li class="bus">
+            <span class="lineNumber">4</span><br/>
+            <span class="street">Cottage Grove</span>
+          </li>
+          <li class="arrival">
+            <span class="noService">Out of Service</span><br/>
+            <span class="resumeTime">Resumes 12:10 am</span>
+          </li>
         </ul>
       </div>
-      <div class= "container11">
+      <div class="row orange">
         <ul>
-          <li class="lineNumber">20</li>
-          <li class="street">Madison</li>
-          <li class="noService"> Out of Service </li>
-          <li class="resumeTime"> Resumes 12:10 am </li>
+          <li class="bus">
+            <span class="lineNumber">20</span><br/>
+            <span class="street">Madison</span>
+          </li>
+          <li class="arrival">
+            <span class="noService">Out of Service</span><br/>
+            <span class="resumeTime">Resumes 12:10 am</span>
+          </li>
         </ul>
       </div>
-      <div class= "container12">
+      <div class="row orange">
         <ul>
-          <li class="lineNumber">157</li>
-          <li class="street">Streeterville/Taylor</li>
-          <li class="noService"> Out of Service </li>
-          <li class="resumeTime"> Resumes 6:00 am </li>
+          <li class="bus">
+            <span class="lineNumber">157</span><br/>
+            <span class="street">Streeterville/Taylor</span>
+          </li>
+          <li class="arrival">
+            <span class="noService">Out of Service</span><br/>
+            <span class="resumeTime">Resumes 6:00 am</span>
+          </li>
         </ul>
       </div>
     </section>

@@ -6,53 +6,45 @@ body {
   background-color: #000;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  color: #000;
+  color: #fff;
 }
 
-.MainContainer {
-  top: 40px;
-  left: 500px;
+.container {
   width: 375px;
   height: 734px;
-  color: #fff;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  }
+  margin: 0 auto;
+}
 
-  ul {
-    list-style-type: none;
-    float: left;
-  }
 
-.container1 {
+.status-bar {
   background-color: #FFCD02;
 }
 
-.navigation{ /*image*/
+.navigation{ /* status bar image*/
   top: 200px;
   width: 375px;
+  background-color:
 }
 
-.container2 {
-  position: absolute;
-  top: 20px;
+nav {
   width: 375px;
   height: 72px;
   background-color: #FFCD02;
+  background-image: url(../images/noun_Settings_1837931.png);
+  background-repeat: no-repeat;
+  background-position: bottom 40% left 9%; /*gear image position*/
+  padding-top: 24px;
+  padding-left: 68px;
 }
 
-.settings { /*settings image* map?*/
-  padding-top: 24px;
-  padding-left: 29px;
+.searchBox{
+  padding-top: 15px;
 }
 
 input{
-  position: absolute;
   width: 289px;
   height: 33px;
   background-color: #fff;
-  top: 22px;
-  left: 71px;
   border-radius: 10px;
   border: 1px solid #ddd;
   font-size: 16px;
@@ -62,150 +54,84 @@ input{
   padding-left: 38px;
 }
 
-.container3 { /*map image*/
-  position: absolute;
+input::placeholder{
+  text-align: justify;
+
+}
+.map { /*map image*/
   width: 375px;
   height: 254px;
-  top: 92px;
 }
 
 /*Bus Lines code*/
-.container4, .container5, .container6, .container7, .container8{
-  position: absolute;
-  top: 346px;
-  width: 375px;
+.row{
+  width: 100%;
   height: 89px;
   background-color: #2E5A89;
   border-bottom: 14px solid #124379;
+  clear: both;
+}
+
+.yellow{
+  background-color: #ff9933;
+  border-bottom: 14px solid #ff8000;
+}
+
+.orange {
+  background-color: #ff5c33;
+  border-bottom: 14px solid #ff471a;
+}
+
+.bus{
+  float: left;
+  width: 70%;
+}
+
+.arrival{
+  float: right;
+  text-align: right;
+  padding-top: 15px;
 }
 
 .lineNumber {
   font-weight: bold;
-  color: #fff;
   font-size: 38px;
   line-height: 56px;
-  padding-left: 10px;
+  padding-left: 16px;
 }
 
 .street  {
-  color: #fff;
   line-height: 12px;
-  padding-left: 10px;
+  padding-left: 16px;
 }
 
 .busTime {
-  color: #fff;
   font-size: 30px;
   font-weight: bold;
-  position: absolute;
-  left: 313px;
   text-align: right;
-  top: 10px;
 }
 
 .min {
-  color: #fff;
-  position: absolute;
-  left: 335px;
   text-align: right;
-  top: 23px;
+  padding-right: 16px;
 }
 
 .nextBus {
-  color: #fff;
   font-size: 14px;
-  position: absolute;
-  left: 319px;
   text-align: right;
-  top: 50px;
+  padding-right: 16px;
 }
 
-.container5 {
-  top: 435px;
+.reRoute, .notAval {
+  padding-right: 16px;
 }
 
-.container6 {
-  top: 524px;
 }
-
-.container7 {
-  top: 613px;
-}
-
-.container8 {
-  top: 702px;
-}
-
-.container9 {
-  position: absolute;
-  top: 791px;
-  width: 375px;
-  height: 89px;
-  background-color:   #ff9933;
-  border-bottom: 14px solid  #ff8000;
-}
-
-.reroute{
-  color: #fff;
-  font-size: 16px;
-  position: absolute;
-  font-weight: regular;
-  left: 306px;
-  text-align: right;
-  top: 26px;
-}
-
-.notAval{
-  color: #fff;
-  position: absolute;
-  font-weight: regular;
-  left: 330px;
-  text-align: right;
-  top: 50px;
-}
-
-.container10, .container11, .container12{
-  position: absolute;
-  top: 880px;
-  width: 375px;
-  height: 89px;
-  background-color: #ff5c33;
-  border-bottom: 14px solid  #ff471a;
-}
-
 .noService{
-  color: #fff;
-  font-size: 16px;
-  position: absolute;
-  font-weight: regular;
-  left: 260px;
-  text-align: right;
-  top: 22px;
+  padding-right: 16px;
+  font-size: 18px;
 }
 
 .resumeTime {
-  color: #fff;
-  font-size: 16px;
-  position: absolute;
-  left: 225px;
-  text-align: right;
-  top: 50px;
-}
-
-.container11 {
-  top: 969px;
-  width: 375px;
-}
-
-.container12 {
-  top: 1058px;
-}
-
-.resumes2{
-  color: ##cc4400;
-  font-size: 16px;
-  position: absolute;
-  left: 232px;
-  text-align: right;
-  top: 50px;
+  padding-right: 16px;
 }
