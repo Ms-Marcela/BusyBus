@@ -15,7 +15,6 @@ body {
   margin: 0 auto;
 }
 
-
 .status-bar {
   background-color: #FFCD02;
 }
@@ -48,7 +47,7 @@ input{
   border-radius: 10px;
   border: 1px solid #ddd;
   font-size: 16px;
-  background-image: url(../images/SearchSearch.png);
+  background-image: url(../images/SearchSearch.png); /*magnifier*/
   background-repeat: no-repeat;
   background-position: bottom 50% left 5%;
   padding-left: 38px;
@@ -84,18 +83,20 @@ input::placeholder{
 
 .bus{
   float: left;
-  width: 70%;
+  width: 50%;
 }
 
 .arrival{
   float: right;
   text-align: right;
   padding-top: 15px;
-  width: 25%;
+  width: 50%;
 }
 
 .routesTroubleshoot{
   padding-right: 16px;
+  padding-top: 20px;
+  line-height: 26px;
 }
 
 .lineNumber {
@@ -125,8 +126,5 @@ input::placeholder{
   font-size: 14px;
   text-align: right;
   padding-right: 16px;
-}
-
-/*.reRoute, .notAval, .noService, .resumeTime {
-  padding-right: 16px;
+  line-height: 28px;
 }
