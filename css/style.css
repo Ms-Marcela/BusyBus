@@ -91,6 +91,11 @@ input::placeholder{
   float: right;
   text-align: right;
   padding-top: 15px;
+  width: 25%;
+}
+
+.routesTroubleshoot{
+  padding-right: 16px;
 }
 
 .lineNumber {
@@ -122,16 +127,6 @@ input::placeholder{
   padding-right: 16px;
 }
 
-.reRoute, .notAval {
-  padding-right: 16px;
-}
-
-}
-.noService{
-  padding-right: 16px;
-  font-size: 18px;
-}
-
-.resumeTime {
+/*.reRoute, .notAval, .noService, .resumeTime {
   padding-right: 16px;
 }
